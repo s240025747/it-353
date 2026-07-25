@@ -1,4 +1,5 @@
 [Task2-Munirah.docx](https://github.com/user-attachments/files/30286206/Task2-Munirah.docx
+
 Task 2: Prototyping Approach & Screen Mockups
 
 1.	Selected Prototyping Approach:
@@ -8,9 +9,12 @@ We chose: (Evolutionary Prototyping) for our project.
 
    <img width="960" height="600" alt="wireframes" src="https://github.com/user-attachments/assets/a120181a-29c0-49f6-a1b3-83a8745d1d59" />
 
-[Untitled.zip](https://github.com/user-attachments/files/30377543/Untitled.zip)
+
 
 Screen 1 (Search & Browse): Allows students to search and filter campus events.
+
 Screen 2 (Event Details): Displays event details and seat availability with a reservation button.
+
 Screen 3 (Confirmation & Transcript): Shows booking confirmation, QR code for entrance, and activity hours with PDF transcript download
 https://www.figma.com/design/MinShiHPZIohaa8mMDeddl/Untitled?node-id=0-1&t=JqgNEdIUJc8yz5ER-1
+[Untitled.zip](https://github.com/user-attachments/files/30377543/Untitled.zip)
