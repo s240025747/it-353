@@ -1,4 +1,6 @@
-# Task 3 - Context Diagram
+# Task 3
+
+- Context Diagram
 This is the Context Diagram for SAMS project.
 What I did:
 - Made the main process (0.0 SAMS System).
