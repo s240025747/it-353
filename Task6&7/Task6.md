@@ -1,5 +1,6 @@
 ## Task 6: UML Class Diagram
-<img width="1180" height="820" alt="image" src="https://github.com/user-attachments/assets/9d147815-1aa1-4981-a2ed-d7d6df14a305" />
+<img width="1180" height="820" alt="image" src="https://github.com/user-attachments/assets/e8c20666-ebea-41cd-99ae-9a5f9c3e5d04" />
 
 
-This is an initial UML class diagram focusing on the user management part of the system. It shows the main user class and its sub-classes (Student, Organizer, and StudentAffairs) with their attributes and inheritance relationships. The Version extends the UML class diagram by adding Activity, Registration, and ActivityCategory classes , along with their basic relationships. The remaining classes will be completed in the next update. 
+
+This update expands the UML class diagram by adding the initial system classes. It includes the User class and its subclasses (Student, Organizer, and StudentAffairs) with their inheritance relationships , Activity, Registration, and ActivityCategory have also been added to represent the core functionality of the system. The remaining classes and relationships will be completed in the next update.
