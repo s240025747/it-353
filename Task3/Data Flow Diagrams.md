@@ -20,3 +20,21 @@ What I added:
 - Data Flows: Arrows connecting all users, processes, and stores.
 
  <img width="519" height="1287" alt="sams_level0_dfd" src="https://github.com/user-attachments/assets/512a515c-fe89-4514-90c2-4105ff0565ce" />
+
+
+
+I designed the Level-1 Data Flow Diagram (DFD) for the Manage Activities process (Process 2.0)
+
+It breaks down the main process into three sub processes:
+
+2.1 Create Activity: Handles new activity submissions from the Activity Organizer and saves them as draft records in the Activities Store (D2).
+2.2 Approve Activity: Fetches pending requests for Student Affairs to approve or reject updating the activity status accordingly.
+2.3 Update Cancel Activity: Processes update or cancellation requests from the Organizer by retrieving existing activity data and saving the final changes back to the database.
+
+
+
+
+
+
+
+<img width="773" height="747" alt="Level-1 DFD for Manage Activities process" src="https://github.com/user-attachments/assets/956804de-014f-4838-b012-ee72a9b67eba" />
