@@ -1,4 +1,4 @@
-#Task7 - Relational Database Design
+# Task7 - Relational Database Design
 This task presents the relational database design the student activity management system. The design includes tables, primary keys, foreign keys, appropriate data types, and normalization up to Third Normal Form (3NF).
 
 ## User Table 
@@ -38,3 +38,44 @@ This task presents the relational database design the student activity managemen
   - departmentID - INT
   - userID - INT
   - departmentName - VARCHAR(100)
+
+## Activity Table
+- Primary Key: activityID
+- Foreign Keys :
+ - organizerID → Organizer(organizerID)
+ - departmentID → StudentAffairs(departmentID)
+ - categoryID → ActivityCategory(categoryID)
+
+**Columns:** 
+
+- activityID - INT
+- title - VARCHAR(100)
+- date - DATETIME
+- location - VARCHAR(100)
+- capacity - INT
+- status - VARCHAR(50)
+- organizerID - INT
+- departmentID - INT
+- categoryID - INT
+
+## Registration Table
+- Primary Key: registrationID
+- Foreign Keys:
+ - studentID → Student(studentID)
+ - activityID → Activity(activityID)
+
+**Columns:**
+
+- registrationID - INT
+- registrationDate - DATETIME
+- status - VARCHAR(50)
+- studentID - INT
+- activityID - INT
+
+## ActivityCategory Table
+- Primary Key: categoryID
+
+**Columns:**
+
+- categoryID - INT
+- categoryName - VARCHAR(100)
