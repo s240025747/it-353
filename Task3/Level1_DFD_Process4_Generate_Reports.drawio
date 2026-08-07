@@ -1,0 +1,124 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="‫الصفحة-1‬" id="HBl5BPDGCK7aAPY93u2v">
+    <mxGraphModel dx="2241" dy="743" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="" mermaidData="{&#xa;  &quot;data&quot;: &quot;graph TD\n    %% Entities\n    Student[Student]\n    Affairs[Student Affairs]\n\n    %% Sub-Processes\n    P4_1((4.1 Compile Activity History))\n    P4_2((4.2 Generate Graduation Transcript))\n    P4_3((4.3 Generate Institutional Metrics))\n\n    %% Datastores\n    D1[(D1: Users Store)]\n    D3[(D3: Enrolments Store)]\n\n    %% Styling\n    classDef proc fill:#dae8fc,stroke:#6c8ebf,stroke-width:2px;\n    classDef store fill:#fff2cc,stroke:#d6b656,stroke-width:1px;\n    class P4_1,P4_2,P4_3 proc;\n    class D1,D3 store;\n\n    %% Data Flows\n    Student --&gt;|Request History| P4_1\n    D3 --&gt;|Read Participation Records| P4_1\n    P4_1 --&gt;|Display Personal History| Student\n\n    D1 --&gt;|Read Graduation Status| P4_2\n    D3 --&gt;|Read Completed Hours| P4_2\n    P4_2 --&gt;|Official Activity Transcript| Affairs\n\n    D3 --&gt;|Read Engagement Data| P4_3\n    P4_3 --&gt;|System Performance Reports| Affairs&quot;,&#xa;  &quot;config&quot;: null&#xa;}" id="Xnm15M4fgcbCFl4ywrEX-16">
+          <mxCell connectable="0" parent="1" style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=10;" vertex="1">
+            <mxGeometry as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Student" mermaidId="n:Student" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Student" id="Xnm15M4fgcbCFl4ywrEX-17">
+          <mxCell parent="Xnm15M4fgcbCFl4ywrEX-16" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="116" x="30" y="327" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Student Affairs" mermaidId="n:Affairs" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Student Affairs" id="Xnm15M4fgcbCFl4ywrEX-18">
+          <mxCell parent="Xnm15M4fgcbCFl4ywrEX-16" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="166" x="706" y="810" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="4.1 Compile Activity History" mermaidId="n:P4_1" mermaidBaseStyle="ellipse;html=1;aspect=fixed;strokeWidth=2;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="4.1 Compile Activity History" id="Xnm15M4fgcbCFl4ywrEX-19">
+          <mxCell parent="Xnm15M4fgcbCFl4ywrEX-16" style="ellipse;html=1;aspect=fixed;strokeWidth=2;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="230" width="230" x="63" y="484" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="4.2 Generate Graduation Transcript" mermaidId="n:P4_2" mermaidBaseStyle="ellipse;html=1;aspect=fixed;strokeWidth=2;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="4.2 Generate Graduation Transcript" id="Xnm15M4fgcbCFl4ywrEX-20">
+          <mxCell parent="Xnm15M4fgcbCFl4ywrEX-16" style="ellipse;html=1;aspect=fixed;strokeWidth=2;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="285" width="285" x="482" y="456" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="4.3 Generate Institutional Metrics" mermaidId="n:P4_3" mermaidBaseStyle="ellipse;html=1;aspect=fixed;strokeWidth=2;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="4.3 Generate Institutional Metrics" id="Xnm15M4fgcbCFl4ywrEX-21">
+          <mxCell parent="Xnm15M4fgcbCFl4ywrEX-16" style="ellipse;html=1;aspect=fixed;strokeWidth=2;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="272" width="272" x="885" y="463" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="D1: Users Store" mermaidId="n:D1" mermaidBaseStyle="html=1;shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=1;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="D1: Users Store" id="Xnm15M4fgcbCFl4ywrEX-22">
+          <mxCell parent="Xnm15M4fgcbCFl4ywrEX-16" style="html=1;shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=1;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="67" width="125" x="305" y="320" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="D3: Enrolments Store" mermaidId="n:D3" mermaidBaseStyle="html=1;shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=1;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="D3: Enrolments Store" id="Xnm15M4fgcbCFl4ywrEX-23">
+          <mxCell parent="Xnm15M4fgcbCFl4ywrEX-16" style="html=1;shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=1;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="67" width="167" x="714" y="320" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Request History" mermaidId="e:Student-&gt;P4_1#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.6120689655172413;exitY=1;entryX=0.5565217391304348;entryY=0;curved=1;exitX=0.61;exitY=1;entryX=0.56;entryY=0;" mermaidBaseValue="Request History" id="Xnm15M4fgcbCFl4ywrEX-24">
+          <mxCell edge="1" parent="Xnm15M4fgcbCFl4ywrEX-16" source="Xnm15M4fgcbCFl4ywrEX-17" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.61;exitY=1;entryX=0.56;entryY=0;rounded=0;" target="Xnm15M4fgcbCFl4ywrEX-19">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="201" y="433" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Read Participation Records" mermaidId="e:D3-&gt;P4_1#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.87;entryX=1;entryY=0.27;" mermaidBaseValue="Read Participation Records" id="Xnm15M4fgcbCFl4ywrEX-25">
+          <mxCell edge="1" parent="Xnm15M4fgcbCFl4ywrEX-16" source="Xnm15M4fgcbCFl4ywrEX-23" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.87;entryX=1;entryY=0.27;rounded=0;" target="Xnm15M4fgcbCFl4ywrEX-19">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="567" y="422" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Display Personal History" mermaidId="e:P4_1-&gt;Student#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.4434782608695652;exitY=0;entryX=0.3879310344827586;entryY=1;curved=1;exitX=0.44;exitY=0;entryX=0.39;entryY=1;" mermaidBaseValue="Display Personal History" id="Xnm15M4fgcbCFl4ywrEX-26">
+          <mxCell edge="1" parent="Xnm15M4fgcbCFl4ywrEX-16" source="Xnm15M4fgcbCFl4ywrEX-19" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.44;exitY=0;entryX=0.39;entryY=1;rounded=0;" target="Xnm15M4fgcbCFl4ywrEX-17">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="36" y="433" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Read Graduation Status" mermaidId="e:D1-&gt;P4_2#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0;entryY=0.16;" mermaidBaseValue="Read Graduation Status" id="Xnm15M4fgcbCFl4ywrEX-27">
+          <mxCell edge="1" parent="Xnm15M4fgcbCFl4ywrEX-16" source="Xnm15M4fgcbCFl4ywrEX-22" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0;entryY=0.16;rounded=0;" target="Xnm15M4fgcbCFl4ywrEX-20">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="367" y="422" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Read Completed Hours" mermaidId="e:D3-&gt;P4_2#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.4;exitY=1;entryX=0.89;entryY=0;" mermaidBaseValue="Read Completed Hours" id="Xnm15M4fgcbCFl4ywrEX-28">
+          <mxCell edge="1" parent="Xnm15M4fgcbCFl4ywrEX-16" source="Xnm15M4fgcbCFl4ywrEX-23" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.4;exitY=1;entryX=0.89;entryY=0;rounded=0;" target="Xnm15M4fgcbCFl4ywrEX-20">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="765" y="422" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Official Activity Transcript" mermaidId="e:P4_2-&gt;Affairs#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.07;entryY=0;" mermaidBaseValue="Official Activity Transcript" id="Xnm15M4fgcbCFl4ywrEX-29">
+          <mxCell edge="1" parent="Xnm15M4fgcbCFl4ywrEX-16" source="Xnm15M4fgcbCFl4ywrEX-20" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.07;entryY=0;rounded=0;" target="Xnm15M4fgcbCFl4ywrEX-18">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="625" y="776" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Read Engagement Data" mermaidId="e:D3-&gt;P4_3#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.88;entryX=0.5;entryY=0;" mermaidBaseValue="Read Engagement Data" id="Xnm15M4fgcbCFl4ywrEX-30">
+          <mxCell edge="1" parent="Xnm15M4fgcbCFl4ywrEX-16" source="Xnm15M4fgcbCFl4ywrEX-23" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.88;entryX=0.5;entryY=0;rounded=0;" target="Xnm15M4fgcbCFl4ywrEX-21">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="1021" y="422" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="System Performance Reports" mermaidId="e:P4_3-&gt;Affairs#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=1;entryY=0.09;" mermaidBaseValue="System Performance Reports" id="Xnm15M4fgcbCFl4ywrEX-31">
+          <mxCell edge="1" parent="Xnm15M4fgcbCFl4ywrEX-16" source="Xnm15M4fgcbCFl4ywrEX-21" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=1;entryY=0.09;rounded=0;" target="Xnm15M4fgcbCFl4ywrEX-18">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="1021" y="776" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
