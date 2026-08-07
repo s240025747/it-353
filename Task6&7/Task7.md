@@ -3,7 +3,9 @@ This task presents the relational database design the student activity managemen
 
 ## User Table 
 - Primary Key: userID
+  
 **Columns:**
+
 - userID - INT
 - name - VARCHAR(100)
 - email - VARCHAR(100)
@@ -11,7 +13,9 @@ This task presents the relational database design the student activity managemen
 ## Student Table
  - Primary Key: studentID
  - Foreign Key: userID → User(userID)
+   
  **Columns:**
+
  - studentID - INT
  - userID - INT
  - activityHours - INT
@@ -19,14 +23,18 @@ This task presents the relational database design the student activity managemen
   ## Organizer Table
   - Primary Key: organizerID
   - Foreign Key: userID → User(userID)
+    
   **Columns:**
+  
   - organizerID - INT
   - userID - INT
  
   ## StudentAffairs Table
   - Primary Key: departmentID
   - Foreign Key: userID → User(userID)
+    
   **Columns:**
+  
   - departmentID - INT
   - userID - INT
   - departmentName - VARCHAR(100)
