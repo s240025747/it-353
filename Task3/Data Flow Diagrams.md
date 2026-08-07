@@ -38,3 +38,19 @@ It breaks down the main process into three sub processes:
 
 
 <img width="773" height="747" alt="Level-1 DFD for Manage Activities process" src="https://github.com/user-attachments/assets/956804de-014f-4838-b012-ee72a9b67eba" />
+
+
+These diagrams model student registration, attendance, and reporting in SAMS. Process 3.0 allows students to browse events, confirm bookings, and record attendance via QR code to receive certificates. Process 4.0 uses enrollment and user data to track participation history, generate graduation transcripts, and deliver engagement reports for Student Affairs.
+
+<img width="1183" height="564" alt="4 0" src="https://github.com/user-attachments/assets/58a3eb55-2cd8-4c7a-b53f-0ad8c8802745" />
+<img width="897" height="1154" alt="3 0" src="https://github.com/user-attachments/assets/b2d9ff26-992a-4097-b260-75a7e87e2901" />
+
+
+
+
+
+
+
+
+
+
