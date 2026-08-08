@@ -124,8 +124,19 @@ This task presents the relational database design the student activity managemen
 
 **Columns:**
 
-ReportID - INT
-totalHours - INT
-totalActivites - INT
-generatedDate - DATETIME
-srudentID - INT
+- ReportID - INT
+- totalHours - INT
+- totalActivites - INT
+- generatedDate - DATETIME
+- srudentID - INT
+
+## Data types summary
+- IDs - INT
+- Names → VARCHAR(100)
+- Messages → VARCHAR(200)
+- Status/type → VARCHAR(50)
+- Dates → DATETIME
+- Totals/capacity/hours → INT
+
+## Normalization (3NF)
+The database design follows Third Normal Form (3NF). Each table has a primary key, all attributes depend only on that key, and no redundant or transitive dependencies exist.
