@@ -79,3 +79,53 @@ This task presents the relational database design the student activity managemen
 
 - categoryID - INT
 - categoryName - VARCHAR(100)
+
+
+## Attendance Table
+- Primary Key: attendanceID
+- Foreign Keys:
+- studentID → Student(studentID)
+- activityID → Activity(activityID)
+
+**Columns:**
+
+- attendanceID - INT
+- attendanceTime - DATETIME
+- method - VARCHAR(50)
+- studentID - INT
+- activityID - INT
+
+## Notification Table
+- Primary Key: notificationID
+- -Foreign Key: studentID → Student(studentID)
+
+**Columns:**
+
+- notificationID - INT
+- message - VARCHAR(200)
+- type - VARCHAR(50)
+- date - DATETIME
+- studentID - INT
+
+## Certification Table 
+- Primary Key: certificateID
+- Foreign Key: studentID → Student(studentID)
+
+
+**Columns:**
+
+- certificateID - INT
+- issueDate- DATETIME
+- studentID - INT
+
+## AcrivityReport Table
+- Primary Key: reportID
+- Foreign Key: studentID → Student(studentID)
+
+**Columns:**
+
+ReportID - INT
+totalHours - INT
+totalActivites - INT
+generatedDate - DATETIME
+srudentID - INT
